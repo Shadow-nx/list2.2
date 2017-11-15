@@ -23,8 +23,6 @@ void delete_element(Node **first,Node **last) {
 	Node *current=*first;
 	Node *prev=nullptr;
 	int delete_element=0;
-	int count=0;
-	bool logic_decision=false;
 	cin>>delete_element;
 	if(current->data==delete_element) {
 		if(current==(*first)) {

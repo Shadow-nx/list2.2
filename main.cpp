@@ -137,7 +137,7 @@ void print_menu() {
 	cout<<"2: add element to list"<<endl;
 	cout<<"3: delete element from list"<<endl;
 	cout<<"4: find an element of list"<<endl;
-	cout<<"5: Replace the item with another one"<<endl;
+	cout<<"5: replace the item with another one"<<endl;
 	cout<<"6: sort list"<<endl;
 	cout<<"7: finish program"<<endl;
 	cout<<endl;

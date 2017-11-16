@@ -23,6 +23,7 @@ void delete_element(Node **first,Node **last) {
 	Node *current=*first;
 	Node *prev=nullptr;
 	int delete_element=0;
+	cout<<"please enter element value"<<endl;
 	cin>>delete_element;
 	if(current->data==delete_element) {
 		if(current==(*first)) {
@@ -54,6 +55,7 @@ void change_element(Node **first) {
 	int element_position;
 	int new_element;
 	int count=0;
+	cout<<"please enter element posituon and new element value"<<endl;
 	cin>>element_position;
 	cin>>new_element;
 	while(current!=nullptr) {
@@ -71,6 +73,7 @@ void find_elements(Node *first) {
 	int element=0;
 	int count=0;
 	bool logic_decision=false;
+	cout<<"please enter element for find"<<endl;
 	cin>>element;
 	while(current!=nullptr) {
 		if(current->data==element) {

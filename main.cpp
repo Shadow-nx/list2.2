@@ -176,7 +176,10 @@ int main(int argc,char *argv[]) {
 				add_list(&first,&last);
 				break;
 			case 3:
-				delete_element(&first,&last);
+				if(first!=nullptr)
+				    delete_element(&first,&last);
+				else
+				    cout<<"list is empty, please first chreate list"<<endl;
 				break;
 			case 4:
 				find_elements(first);

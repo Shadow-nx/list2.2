@@ -48,14 +48,14 @@ void delete_element(Node **first,Node **last) {
 		prev=current;
 		current=current->next;
 	}
-	cout<<"list dont have this element"<<endl;
+	cout<<"list don't have this element"<<endl;
 }
 void change_element(Node **first) {
 	Node *current=*first;
 	int element_position;
 	int new_element;
 	int count=0;
-	cout<<"please enter element posituon and new element value"<<endl;
+	cout<<"please enter element position and new element value"<<endl;
 	cin>>element_position;
 	cin>>new_element;
 	while(current!=nullptr) {
@@ -66,7 +66,7 @@ void change_element(Node **first) {
 		current=current->next;
 		count++;
 	}
-	cout<<"list dont have this element"<<endl;
+	cout<<"list don't have this element"<<endl;
 }
 void find_elements(Node *first) {
 	Node *current=first;
@@ -84,7 +84,7 @@ void find_elements(Node *first) {
 		current=current->next;
 	}
 	if(logic_decision==false)
-		cout<<"list dont have this element"<<endl;
+		cout<<"list don't have this element"<<endl;
 }
 void check_numbers(const char *argv,int *&numbers_array,int &numbers_count) {
 	for(int i=0; i<strlen(argv); i++) {
@@ -139,7 +139,7 @@ void print_menu() {
 	cout<<"4: find an element of list"<<endl;
 	cout<<"5: Replace the item with another one"<<endl;
 	cout<<"6: sort list"<<endl;
-	cout<<"7: finish programm"<<endl;
+	cout<<"7: finish program"<<endl;
 	cout<<endl;
 }
 int main(int argc,char *argv[]) {
@@ -182,7 +182,7 @@ int main(int argc,char *argv[]) {
 			case 6:
 				break;
 			case 7:
-				cout<<"Do you want finish programm? Please enter: yes or no! "<<endl;
+				cout<<"Do you want finish program? Please enter: yes or no! "<<endl;
 				cin>>choice_exit;
 				if(choice_exit =="yes" || choice_exit == "YES" || choice_exit == "Yes" || choice_exit == "Y" || choice_exit == "y")
 					cout<<"Good bye!"<<endl;

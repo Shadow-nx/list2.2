@@ -26,8 +26,13 @@ void delete_element(Node **first,Node **last) {
 	cout<<"please enter element value"<<endl;
 	cin>>delete_element;
 	if(current->data==delete_element) {
-		if(current==(*first)) {
+			if(current==(*first) &&(*first)!=(*last)) {
 			(*first)=(*first)->next;
+			delete current;
+			return;
+		}else if(current==(*first) &&(*first)==(*last)){
+			(*first)=nullptr;
+			(*last)=(*first);
 			delete current;
 			return;
 		}
